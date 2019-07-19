@@ -11,16 +11,16 @@
 class CitiesViewModel {
     // weak to model
     weak var weatherManager: WeatherManager!
-    
+
     private var weathers = [Weather]()
     private var cityCellViewModels = [CityCellViewModel]()
     var detailViewModel: DetailsViewModel!
-    
+
     required init(weatherManager: WeatherManager) {
         self.weatherManager = weatherManager
     }
-    
-    func updateWeather(completion:@escaping () -> Void) {
+
+    func updateWeather(completion: @escaping () -> Void) {
         cityCellViewModels.removeAll()
         weatherManager.getWeather { (weathers) -> Void in
             self.weathers = weathers
@@ -30,17 +30,17 @@ class CitiesViewModel {
             completion()
         }
     }
-    
+
     func numberOfCities() -> Int {
         return cityCellViewModels.count
     }
-    
+
     func cellViewModel(index: Int) -> CityCellViewModel? {
-        guard index < weathers.count && index >= 0 else { return nil }
-        
+        guard index < weathers.count && index > = 0 else { return nil }
+
         return cityCellViewModels[index]
     }
-    
+
     func detailsViewModel(index: Int) -> DetailsViewModel? {
         detailViewModel = DetailsViewModel(weather: weathers[index])
         return detailViewModel

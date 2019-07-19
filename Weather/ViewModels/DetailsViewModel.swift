@@ -12,11 +12,11 @@ class DetailsViewModel {
     var windString: String!
     var precipitationString: String!
     var temperatureString: String!
-    
+
     required init(weather: Weather) {
         self.cityTitle = weather.city
         self.temperatureString = String(format: "%0.f%@", weather.temperature, "\u{00B0}")
-        
+
         let windStr: String
         switch weather.windDirection! {
         case .North: windStr = "Noth"; break
@@ -25,7 +25,7 @@ class DetailsViewModel {
         case .East: windStr = "East"; break
         }
         self.windString = String(format: "%@ wind, %0.f m/s", windStr, weather.windSpeed)
-        
+
         let preciptionStr: String
         switch weather.precipitation! {
         case .Sunny: preciptionStr = "Sunny"; break
@@ -36,5 +36,5 @@ class DetailsViewModel {
         }
         self.precipitationString = preciptionStr
     }
-    
+
 }

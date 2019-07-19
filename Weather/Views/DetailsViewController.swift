@@ -15,7 +15,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var precipitationLabel: UILabel!
 
     weak var viewModel: DetailsViewModel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

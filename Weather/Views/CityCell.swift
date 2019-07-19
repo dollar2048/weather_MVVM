@@ -12,7 +12,7 @@ class CityCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
-    
+
     // weak to VM
     weak var viewModel: CityCellViewModel! {
         didSet {
@@ -21,7 +21,7 @@ class CityCell: UITableViewCell {
             temperatureLabel.text = viewModel.temperatureString
         }
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
