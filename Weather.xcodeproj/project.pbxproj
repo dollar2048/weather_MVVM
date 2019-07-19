@@ -51,6 +51,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DA3D9A722E1AC1B0098155D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				95FEEB84228185DA00819D2B /* CitiesViewModel.swift */,
+				95FEEB922281BD8A00819D2B /* CityCellViewModel.swift */,
+				95FEEB982281DACF00819D2B /* DetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4DA3D9A822E1AC2E0098155D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95FEEB712281822800819D2B /* CitiesViewController.swift */,
+				95FEEB86228188B900819D2B /* CityCell.swift */,
+				95FEEB87228188B900819D2B /* CityCell.xib */,
+				95FEEB962281D9D100819D2B /* DetailsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		95FEEB632281822800819D2B = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +93,9 @@
 			children = (
 				95FEEB6F2281822800819D2B /* AppDelegate.swift */,
 				95FEEB732281822800819D2B /* Main.storyboard */,
+				4DA3D9A822E1AC2E0098155D /* Views */,
+				4DA3D9A722E1AC1B0098155D /* ViewModels */,
 				95FEEB8A22818D8C00819D2B /* Models */,
-				95FEEB8D22818DFA00819D2B /* Cities */,
-				95FEEB9A22821C7C00819D2B /* Details */,
 				95FEEB812281823E00819D2B /* Resources */,
 			);
 			path = Weather;
@@ -97,27 +118,6 @@
 				95FEEB8E22818E1E00819D2B /* WeatherManager.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		95FEEB8D22818DFA00819D2B /* Cities */ = {
-			isa = PBXGroup;
-			children = (
-				95FEEB712281822800819D2B /* CitiesViewController.swift */,
-				95FEEB84228185DA00819D2B /* CitiesViewModel.swift */,
-				95FEEB86228188B900819D2B /* CityCell.swift */,
-				95FEEB87228188B900819D2B /* CityCell.xib */,
-				95FEEB922281BD8A00819D2B /* CityCellViewModel.swift */,
-			);
-			path = Cities;
-			sourceTree = "<group>";
-		};
-		95FEEB9A22821C7C00819D2B /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				95FEEB962281D9D100819D2B /* DetailsViewController.swift */,
-				95FEEB982281DACF00819D2B /* DetailsViewModel.swift */,
-			);
-			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
